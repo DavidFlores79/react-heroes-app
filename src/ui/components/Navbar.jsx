@@ -1,11 +1,17 @@
+import { useContext } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../auth/context/authContext';
 
 
 export const Navbar = () => {
 
     const navigate = useNavigate();
+    const { login, authState, logout } = useContext( AuthContext );
+    const { user } = authState;
+
 
     const onLogout = () => {
+        logout();
         navigate('login', {
             replace: true,
         })
@@ -50,7 +56,7 @@ export const Navbar = () => {
                                 aria-expanded="false">
                                 <div className="media align-items-center">
                                     <div className="media-body mr-2 d-none d-lg-block">
-                                        <span className="mb-0 text-white font-weight-bold user-name">David Flores</span>
+                                        <span className="mb-0 text-white font-weight-bold user-name">{user?.name}</span>
                                     </div>
                                     <span className="" >
                                         <img src="https://res.cloudinary.com/dltvxi4tm/image/upload/v1679101186/adizqopkcvodldtou7re.png" width="40" height="40" className="rounded-circle" alt="Avatar" />
@@ -62,7 +68,7 @@ export const Navbar = () => {
                                     <h6 className="text-overflow m-0">¡Bienvenido!</h6>
                                 </div>
                                 <div className="dropdown-item disabled">
-                                    <span className="">David Flores</span>
+                                    <span className="">{ user?.name }</span>
                                 </div>
                                 <div className="dropdown-item disabled text-dark">
                                     <span className="font-weight-bold">david.flores</span>
