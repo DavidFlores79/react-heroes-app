@@ -4,7 +4,7 @@ import { HeroesList } from '../components/HeroesList';
 export const MarvelPage = () => {
 
   const publisher = 'Marvel Comics';
-  const publisherImage = 'src/assets/Marvel.png';
+  const publisherImage = '../src/assets/Marvel.png';
 
   return (
     <>
