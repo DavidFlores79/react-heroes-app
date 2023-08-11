@@ -14,32 +14,26 @@ export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
 
-            <Link
-                className="navbar-brand"
-                to="/"
-            >
-                Asociaciones
+            <Link className="navbar-brand shadow" to="/">
+                <img src="src/assets/marvel-dc.png" alt="Marvel-DC" height={60} />
             </Link>
 
             <div className="navbar-collapse">
                 <div className="navbar-nav">
 
                     <NavLink
-                        // className="nav-item nav-link"
                         className={({ isActive }) => `nav-item nav-link ${(isActive) ? 'active' : ''}`}
                         to="/marvel"
                     >
                         Marvel
                     </NavLink>
                     <NavLink
-                        // className="nav-item nav-link"
                         className={({ isActive }) => `nav-item nav-link ${(isActive) ? 'active' : ''}`}
                         to="/dc"
                     >
                         DC
                     </NavLink>
                     <NavLink
-                        // className="nav-item nav-link"
                         className={({ isActive }) => `nav-item nav-link ${(isActive) ? 'active' : ''}`}
                         to="/search"
                     >

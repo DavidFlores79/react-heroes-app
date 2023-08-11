@@ -1,11 +1,33 @@
-.card {
+
+
+/*NavBar*/
+.navbar-brand img{
+  border-radius: 5px;
+}
+
+.nav-item.nav-link {
+  font-size: 1.3rem;
+  
+}
+/*NavBar*/
+
+
+/* Seccion de heroe */
+.heroe-item.card {
   width: 19rem;
 }
 
-.card img {
+.heroe-item.card img {
   max-height: 21rem;
 }
 
+.heroe-page.card {
+  width: 30%;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
+}
+/* Seccion de heroe */
+
+/* Volver pointer un elemento sin estilos*/
 .pointer, .pointer:hover {
   text-decoration: none;
   color: inherit;
@@ -14,5 +36,30 @@
 }
 
 .pointer:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
+/* Volver pointer un elemento*/
+
+
+
+/* Tooltip */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+  min-width: 200px;
+}
+
+.tooltip-text.tooltip-bottom-left {
+  bottom: -100%;
+  left: 25%;
+}
+/* Tooltip */

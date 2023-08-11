@@ -10,12 +10,12 @@ export const HeroItem = ({
     characters,
 }) => {
 
-    const heroImage = `src/assets/heroes/${id}.jpg`
+    const heroImage = `/src/assets/heroes/${id}.jpg`
 
     return (
         <>
-            <Link to={`/heroe/${id}`} className='pointer'>
-                <div className="card m-2 shadow">
+            <Link to={`/heroe/${id}`} className='pointer animate__animated animate__fadeIn'>
+                <div className="heroe-item card m-2 shadow">
                     <img src={heroImage} className="card-img-top" alt={superhero} />
                     <div className="card-body">
                         <h4 className="card-title font-weight-bold">{superhero}</h4>

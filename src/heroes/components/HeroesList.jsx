@@ -8,7 +8,7 @@ export const HeroesList = ({ publisher }) => {
     console.log(`${publisher}`, heroes);
 
     return (
-        <div className='row d-flex justify-content-around'>
+        <div className='row d-flex justify-content-around animate__animated animate__fadeIn pb-5'>
             {
                 heroes.map(heroe => <HeroItem key={heroe.id} {...heroe} />)
             }
