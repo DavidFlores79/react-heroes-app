@@ -10,7 +10,7 @@ export const HeroItem = ({
     characters,
 }) => {
 
-    const heroImage = `/public/images/heroes/${id}.jpg`
+    const heroImage = `/images/heroes/${id}.jpg`
 
     return (
         <>

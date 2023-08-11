@@ -19,7 +19,7 @@ export const HeroePage = () => {
 
   const { id, superhero, alter_ego, first_appearance, characters } = heroeData;
 
-  const heroImage = `/public/images/heroes/${id}.jpg`;
+  const heroImage = `/images/heroes/${id}.jpg`;
 
   return (
     <>
