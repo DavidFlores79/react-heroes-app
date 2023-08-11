@@ -5,7 +5,7 @@ export const DCPage = () => {
 
 
   const publisher = 'DC Comics';
-  const publisherImage = '../src/assets/DC-Comics.png';
+  const publisherImage = '/public/images/brand/DC-Comics.png';
 
   return (
     <>
